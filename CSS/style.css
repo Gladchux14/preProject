@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+.logo{
+  width: 100px;
+}
+ul{
+  display: none;
+  gap: 1rem;
+}
+li{
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.lets-talk{
+  border: none;
+  border-radius: 5px;
+  padding:8px ;
+  background-color: rgb(201 243 29);
+}
+#contact-open-menu{
+  color: black;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#mobile-open-menu{
+  font-size: 20px;
+}
+
+#contact-close-menu{
+  display: none;
+}
+#mobile-close-menu{
+  display: none;
+}
+
+.toggle{
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-hero{
+  background-image: url(/Assets/banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+} 
+
+.hero-image{
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.first-side{
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  color: gray;
+  /* transform:rotate(90deg); */
+}
+
+.first-side1 .first-side2{
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  transform: rotate(90deg);
+}
+
+.first-side1 .side-text{
+  color: white;
+  transform: rotate(90deg);
+  text-decoration: none;
+}
+
+#scroll{
+  color: white;
+  transform: rotate(90deg);
+  text-decoration: none;
+}
+
+.second-side{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: gray;
+  gap: 10px;
+}
+
+.second-side1{
+  display: grid;
+}
+
+.side-icon{
+   display: grid;
+   border-radius:25px;
+   padding: 8px;
+  color: white;
+  background-color: black;
+}
+
+.hero-text{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.hero-description{
+  padding: 10px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  flex-direction: column;
+
+  br{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #hero-icon{
+    transform: rotate(-45deg);
+  }
+}
+
+.hero-word{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.hero-header{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.first-side .second-side{
+ display: none;
+}
+
+@keyframes yellow {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: orange; 
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.hero-header2{
+  animation: yellow 3s ease-in-out infinite;
+}
+
+.hero-ad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-arrow{
+  font-size: 24px;
+}
+
+#icon-play{
+  color: white;
+  font-size: 40px;
+}
+
+.slides{
+  display: flex;
+  background-color: yellow;
+  color: white;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  box-sizing: border-box;
+  animation: scroll-horizontal 10s linear infinite;
+}
+
+.slide{
+  /* display: flex; */
+  /* display: inline-block; */
+  padding-left: 50px;
+  color: white;
+  background-color: yellow;
+}
+
+@keyframes scroll-horizontal{
+  0%{
+    transform: translateX(100%);
+  }100%{
+    transform: translateX(-100%);
+  }
+}
+
+.section-info{
+  background-color: black;
+  color: white;
+  padding: 20px ;
+}
+
+.info-star{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+
+  .star{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .info-star p{
+    font-size: 14px;
+    text-align: justify;
+    justify-self: center;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
+
+.info-tabs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info-tab{
+  border: none;
+  border-radius: 5px;
+  padding:8px ;
+  color: white;
+  background-color: #292929;
+  cursor: pointer;
+}
+
+.info-tab:link,
+.info-tab:visited{
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #292929;
+}
+
+.info-tab:hover,
+.info-tab:active{
+  color: black;
+  background-color: yellow;
+}
+
+@media (min-width:1024px) {
+  ul{
+    display: flex;
+  }
+  #mobile-open-menu{
+    display: none;
+  }
+
+}
