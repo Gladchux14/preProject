@@ -27,16 +27,21 @@
             </ul>
             
     
-            <div class="toggle">
+             <div class="toggle">
                 <button class="lets-talk">
                     Let's Talk
                     <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                </button> 
+            
+                <button class="btn-mobile-nav">
                 <i class="fa-solid fa-bars" id="mobile-open-menu"></i>
-                <i class="fa-solid fa-x" id="mobile-close-menu"></i>
+                <i class="fa-solid fa-x " id="mobile-close-menu"></i>
+                </button>
+
                 <i class="fa-solid fa-bars" id="contact-open-menu"></i>
                 <i class="fa-solid fa-x" id="contact-close-menu"></i>
-                <!-- <div class="sidebar">
+<!-- 
+                <div class="sidebar">
                 <img src="./Assets/logo.png"  class="sidebar-logo" alt="Matias logo">
                 <p class="sidebar-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem.
                  Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
@@ -65,12 +70,25 @@
                 </ul>
               </div> 
               
-              <button class="sidebar-button">Let's Talk</button>
             </div> -->
-            </div> 
+        </div>
+            
         </nav>
+   <div class="toggle-menu">
+    <ul class="toggle-nav-list ">
+        <li><a class="main-nav-link" href="#home">HOME</a><hr></li>
+        
+        <li><a class="main-nav-link" href="#about">ABOUT</a> <hr></li>
+        <li><a class="main-nav-link" href="#work">WORK</a><hr></li>
+        
+        <li><a class="main-nav-link" href="#services">SERVICES</a><hr></li>
+        <li><a class="main-nav-link"href="#testimonial">TESTIMONIAL</a> <hr></li>
+        <li><a class="main-nav-link" href="#blog">BLOG</a></li>
+    </ul>
+   </div>
+
  <section class="section-hero"> 
-    <div class="first-side">
+    <!-- <div class="first-side">
    <div class="first-side-1">
      <a href=""><img src="./Assets/dial.png" alt="icon"></a>
      <a href="" class="side-text" id="scroll">(+02)-574-328-301</a>
@@ -79,7 +97,7 @@
         <a href="" id="scroll">SCROLL DOWN</a>
         <a href=""><img src="./Assets/scroll-down.png" alt=""></a>
     </div>    
-    </div>
+    </div> -->
 
     <div class="hero-text">
         <button class="hero-description">Currently available for freelance <br>Worldwide  <i class="fa fa-long-arrow-right" id="hero-icon" aria-hidden="true"></i></button>
@@ -98,7 +116,7 @@
         <img src="./Assets/banner-man.png" class="hero-image" alt="hero-img">
     </div>
 
-    <div class="second-side">
+    <!-- <div class="second-side">
      <div class="second-side1">
       <a href="" id="scroll">FOLLOW ME</a>
       <a href=""><img src="./Assets/scroll-down.png" alt=""></a>
@@ -112,12 +130,12 @@
             <li><a href=""><i class="fa-brands fa-instagram" id="side-icon"></i></a></li>
         </ul>
      </div>   
-    </div>  
+    </div>   -->
  </section>
 </header>
  <div class="Animation-slide">
     <div class="slides">
-        <div class="slide"><img src="./Assets/ts1.png" alt=""></div>
+        <div ><img src="./Assets/ts1.png" class="slide" alt=""></div>
         <div class="slide"><img src="./Assets/ts2.png" alt=""></div>
         <div class="slide"><img src="./Assets/ts3.png" alt=""></div>
         <div class="slide"><img src="./Assets/ts4.png" alt=""></div>
@@ -135,16 +153,210 @@
 
      <div class="info">
         <ul class="info-tabs">
-           <li class="info-tab">ABOUT</li>
-           <li class="info-tab">EXPERIENCE</li>
-           <li class="info-tab">EDUCATION</li>
-           <li class="info-tab">SKILLS</li>
+           <li data-tab-target="about" class="info-tab active">ABOUT</li>
+           <li data-tab-target="experience" class="info-tab">EXPERIENCE</li>
+           <li data-tab-target="education" class="info-tab">EDUCATION</li>
+           <li data-tab-target="skills" class="info-tab">SKILLS</li>
         </ul>
 
+     <div class="flip-tabs active" id="about" data-tab-content="about">
+        <div class="info-img">
+        <img src="./Assets/personal-infothumb.png" class="info-pic" alt="img"> </div>
+          <div class="information">
+         <p>Personal Info</p>
+         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore totam minus eius explicabo officia consequatur iste laboriosam nemo. Omnis mollitia facilis dignissimos itaque sunt quos nobis fugiat maxime iste hic.</span> 
+         </div>
+          <div class="info-details">
+            <div>
+            <h3>Email</h3>
+            <p>dev.mostafizar.com</p>
+          </div>
 
+          <div>
+            <h3>Phone</h3>
+            <p>01575699193</p>
+          </div> 
+ 
+          <div>
+            <h3>Address</h3>
+            <p>Dahagram,Lalmonirhat</p>
+          </div>
+          <div>
+            <h3>Follow</h3>
+              <span class="info-icon">
+              <a href=""><i class="fa-brands fa-facebook" id="info-icon"></i></a>
+              <a href="" ><i class="fa-brands fa-square-twitter" id="info-icon"></i></a>
+             <a href=""><i class="fa-brands fa-youtube" id="info-icon" ></i></a>
+             <a href=""><i class="fa-brands fa-linkedin"     id="info-icon" ></i></a>
+             <a href=""><i class="fa-brands fa-instagram" id="info-icon" ></i></a>
+              </span>
+            </div>
+        </div> 
+     </div>   
+
+     
+     <div class="flip-tabs" id="experience" data-tab-content="experience">
+      <div class="info-img"> <img src="./Assets/personal-infothumb.png" class="info-pic" alt="img"></div>
+       <div class="information">
+          <p> Experience</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore, corporis velit fuga suscipit molestias neque, dolorum adipisci rem debitis officia eaque et laborum, beatae dolores consectetur. Explicabo, exercitationem culpa?</span>
+       </div>
+       
+       <hr>
+       <div class="roles">
+        <h3>Software Engineer</h3>
+        <p> In 2011</p>
+        <span> UI Head & Manager</span>
+       </div>
+       <hr>
+       <div class="roles">
+        <h3>Product Designer</h3>
+        <p> In 2016</p>
+        <span>Head of Department</span>
+       </div>
+       <hr>
+       <div class="roles">
+        <h3>Senior UI Designer</h3>
+        <p> In 2023</p>
+        <span> Fiver.com</span>
+       </div>
+   
      </div>
 
-   </section> 
+     <div class="flip-tabs" id="education" data-tab-content="education">
+        <div class="info-img"><img src="./Assets/personal-infothumb.png" class="info-pic" alt="pic"></div>
+         <div class="information">
+         <p>Education</p>
+         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis asperiores iure, totam commodi cumque illo laudantium. Eum non, quas vitae laborum ea natus assumenda tempora saepe? Eum, quo autem? Doloribus!</span>
+         </div>
+         <hr>
+         <div class="roles">
+            <h3>Programmong Course</h3>
+            <p>2011 - 2013</p>
+            <span>New York University</span>
+         </div>
+         <hr>
+         <div class="roles">
+            <h3>University of Design</h3>
+            <p>2013 - 2016</p>
+            <span>Kingston, United States</span>
+         </div>
+         <hr>
+         <div class="roles">
+            <h3>Web Design Course</h3>
+            <p>2016 - 2018</p>
+            <span> New York University</span>
+         </div>
+     </div>
+   
+     <div class="flip-tabs" id="skills" data-tab-content="skills">
+       <div class="info-img"> <img src="./Assets/personal-infothumb.png" class="info-pic" alt="pic"></div>
+        <div class="information">
+            <p> My Skills</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor, doloremque voluptatibus provident labore recusandae corrupti voluptate earum, quae explicabo minus asperiores tempore! Nostrum pariatur natus reiciendis, modi aperiam similique!</span>
+        </div>
+           
+        <div class="info-skills">
+
+         <div class="skill">
+            <img src="./Assets/html.png" class="skill-logo" alt="logo">
+            <div  class="skill-text" >
+                <span>HTML</span>
+                <p>85%</p>
+            </div>
+         </div>
+
+         <div class="skill">
+            <img src="./Assets/figma.png" class="skill-logo" alt="logo">
+            <div class="skill-text">
+                <span>Figma</span>
+                <p>90%</p>
+            </div>
+         </div>
+
+         <div class="skill">
+            <img src="./Assets/word.png" class="skill-logo" alt="logo">
+            <div class="skill-text">
+                <span>Word press</span>
+                <p>95%</p>
+            </div>
+            </div>
+
+         <div class="skill">
+            <img src="./Assets/boot.png" class="skill-logo" alt="logo">
+            <div class="skill-text">
+                <span>Bootsrap</span>
+                <p>97%</p>
+            </div>
+         </div>
+    
+         </div>
+      </div>
+  </div>
+ </section>
+
+ <section>
+    <div class="Animation-slide">
+        <div class="slides">
+            <div ><img src="./Assets/ts1.png" class="slide" alt=""></div>
+            <div class="slide"><img src="./Assets/ts2.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts3.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts4.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts5.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts6.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts7.png" alt=""></div>
+            <div class="slide"><img src="./Assets/ts8.png" alt=""></div>
+        </div>
+     </div> 
+ </section>
+
+ <section class="section-works">
+    <div class="awards">
+        <p>Our Awards</p>
+        <span>View My Work <i class="fa fa-long-arrow-right"  aria-hidden="true"></i></span>
+        <hr>
+    </div>
+
+    <div class="site">
+        <p>Site of the day</p>
+        <p>Css & Animation</p>
+        <span>2018</span>
+        <hr>
+    </div>
+
+    <div class="Strategy">
+        <p>Best Business Model</p>
+        <p>New Strategy</p>
+        <span>2019</span>
+        <hr>
+    </div>
+
+    <div class="motion">
+        <p>Motion Graphic</p>
+        <p>3D and Visual effect</p>
+        <span>2020</span>
+        <hr>
+    </div>
+
+    <div class="design">
+        <p>Video Design</p>
+        <p>Css & Animation</p>
+        <span>2022</span>
+        <hr>
+    </div>
+ </section>
+
+   <section class="section-project">
+    <div class="project-header"><p> <span class="line"></span>
+      Complete Project <span class="line"></span></p></div>
+    
+      <p class="project-description">Look At My Project And Give Me Your Feedback</p>
+
+
+
+
+   </section>
+  
 
     <script src="./script.js"></script>
 </body>
